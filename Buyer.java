@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 public class Buyer implements Runnable{
     private final String name;
-    final String TAG = "GetCheese";
+    //final String TAG = "GetCheese";
     
     public Buyer(String name) {
     	this.name = name;
@@ -14,7 +14,7 @@ public class Buyer implements Runnable{
 	public void run() {
 		try {
 	    for(int i = 1; i < 11; i++) {
-	    	System.out.println(name + ": " + i + " получил сыр и ушел");
+	    		System.out.println(name + ": " + i + "   gets cheese and leaves the shoop");
 	    	Thread.sleep(100);
 	    		    }
 		} catch (InterruptedException ex) {
